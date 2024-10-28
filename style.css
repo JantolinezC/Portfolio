@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFFFFF;
+  color: #181717;
+  transition: background-color 0.5s, color 0.5s;
+  padding-top: 70px;
+}
+
+/*navbar*/
+
+/* Navbar styles for light mode */
+#mainNavbar {
+  background-color: rgba(255, 255, 255, 1); /* Initial white background */
+  transition: background-color 0.5s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Navbar shadow on scroll */
+#mainNavbar.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow when scrolling */
+}
+
+/* Navbar styles for dark mode */
+body.dark-mode #mainNavbar {
+  background-color: rgba(44, 44, 44, 1); /* Darker background for dark mode */
+}
+
+/* Navigation link styles */
+.navbar-nav .nav-link {
+  font-weight: normal;
+  color: black;
+  transition: color 0.3s;
+}
+
+/* Active navigation link */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+/* Navigation link hover effect */
+.navbar-nav .nav-link:hover {
+  color: #8B2E2E; /* Dark red color on hover */
+}
+
+/* Dark mode: navbar text color */
+body.dark-mode .navbar-nav .nav-link {
+  color: white;
+}
+
+/* Dark mode: navbar link hover effect */
+body.dark-mode .navbar-nav .nav-link:hover {
+  color: #BE8A8A;
+}
+
+/* Coding section */
+#coding {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #181717;
+  transition: opacity 0.5s, color 0.5s;
+}
+
+/* Custom margin */
+.custom-margin {
+  margin-left: 7rem;
+}
+
+/* About Section Styles */
+#about, #projects, #skills {
+  min-height: 90vh;
+  margin-top: 90px;  
+}
+
+#about h2, #projects h2, #contact h2 {
+  margin-bottom: 40px;
+}
+
+#about .row {
+  display: flex;
+  align-items: center;
+}
+
+#me {
+  margin-top: 0; 
+  background-color: #FFB3C1; 
+  border-radius: 20%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  padding: 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  color: black; 
+}
+
+#me:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Skills Section Styles */
+#skills h2 {
+  margin-bottom: 20px;
+}
+
+/* Contact Section Styles */
+#contact {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  transition: transform 0.3s;
+}
+
+#contact h2 {
+  color: #181717; 
+}
+
+#contact a {
+  color: #181717; 
+}
+
+#contact a:hover {
+  color: #8B2E2E; 
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1F1F1F;
+  color: white;
+}
+
+/* Dark mode icon color */
+body.dark-mode #darkMode {
+  color: white;
+}
+
+/* Dark mode styles for contact icons */
+body.dark-mode #contact a {
+  color: white; 
+}
+
+body.dark-mode #contact a:hover {
+  color: #8B2E2E; 
+}
+
+/* Image styles */
+#imagen-andrea {
+  width: 50%;
+  height: auto;
+  transition: transform 0.5s, opacity 0.5s;
+  cursor: pointer;
+  border-radius: 20%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 60px; 
+  padding: 10px;
+  background-color: #FFFFFF; 
+  color: #181717;
+  border-top: 3px solid #8B2E2E;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+/* Increase icon size */
+#darkMode, .bi {
+  font-size: 2rem;
+  transition: transform 0.3s;
+}
+
+/* Hover effect for icons in footer */
+#contact i:hover {
+  transform: scale(1.2);
+}
+
+/* Alinear el icono de flecha hacia arriba */
+#enlaceAbout {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px;
+  font-size: 2rem;
+  transition: transform 0.3s;
+  color: #1F1F1F;
+}
+
+#enlaceAbout i:hover {
+  transform: scale(1.2); 
+}
+
+/* Asegurando que los íconos sean visibles en modo oscuro */
+#linkedin, #github, #mail {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px; 
+  font-size: 2rem; 
+  transition: transform 0.3s;
+  color: #1F1F1F; 
+}
+
+/* Dark mode icon color */
+body.dark-mode #linkedin,
+body.dark-mode #github,
+body.dark-mode #mail {
+  color: white; 
+}
+
+/* Skills Section */
+#containerFrontend, #containerBackend, #containerVersionControl {
+  border-bottom: 1px solid rgba(130, 46, 46, 0.4); 
+  padding-bottom: 0.5px;
+}
+
+/* Efecto hover para íconos */
+.img-fluid:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s; 
+}
+
+/* Asegurando que los íconos estén centrados */
+#insideFrontend, #insideBackend, #insideVersionControl {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 15px; 
+}
+
+/* Ajuste para los títulos */
+#frontend, #backend, #versionControl {
+  margin-top: 20px; 
+  font-size: 1.2rem; 
+}
+
+/* Dark mode styles for Contact section */
+body.dark-mode #contact h2 {
+  color: white; 
+}
+
+body.dark-mode #contact {
+  color: white; 
+}
+
+/* Styles for skill names */
+.skill-name {
+  font-weight: bold; 
+  margin-top: 5px; 
+  font-size: 0.9rem; 
+}
+
+/* Footer styles for dark mode */
+body.dark-mode footer {
+  background-color: #1F1F1F; 
+  color: white;
+  border-top: 3px solid #8B2E2E;
+}
+
+/* Copyright section */
+#copyright {
+  text-align: center;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+/* Carousel Styles */
+.carousel-item {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.carousel-caption {
+  text-align: center; 
+  color: black;
+  background-color: rgba(255, 179, 193, 0.7); 
+  border-radius: 10px;
+  padding: 10px; 
+}
